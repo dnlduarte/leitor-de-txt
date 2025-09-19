@@ -1,0 +1,16 @@
+with open('notas.txt', 'r', encoding='utf-8') as arquivo:
+    lista = []
+    for linha in arquivo:
+        lista = linha.split(' ')
+
+        y = lista[:-4]
+        nomes = ' '.join(y)
+
+        x = lista[-4:]
+
+        soma = 0
+        for n in x:
+            soma += float(n)
+        media = soma / 4
+        print(f'{nomes} - Média: {media:.2f}' '\n')
+        print('-' * 30)
