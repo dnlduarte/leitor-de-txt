@@ -1,4 +1,4 @@
-with open('notas.txt', 'r', encoding='utf-8') as arquivo:
+with open('notas_alunos.txt', 'r', encoding='utf-8') as arquivo:
     lista = []
     for linha in arquivo:
         lista = linha.split(' ')
